@@ -1,0 +1,10 @@
+const array = [0, 1];
+
+function Fibonacci( num ){
+    for(a=0; a<num-1; a++) {
+        const number = array[a] + array[a+1];
+        array.push(number)
+    };
+    return array;
+}
+console.log( Fibonacci(1) )
