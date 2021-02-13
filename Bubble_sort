@@ -1,0 +1,21 @@
+const array = [9, 10, 3, 4, 8, 5, 6, 1, 7, 2];
+
+// array[a]의 인자만을 바꾸는 것이다.
+//for(a=0; a < array.length-1; a++){
+//  if( array[a]>array[a+1] ){
+//      array[a+1] = array[a];
+//  }
+//}
+
+for(a=0; a < array.length-1; a++){
+    for(b=0; b < array.length-a; b++){
+        if( array[b] > array[b+1]){
+            c = array[b];
+            array[b] = array[b+1];
+            array[b+1] = c;
+        }
+    }
+}
+
+
+console.log(array);
