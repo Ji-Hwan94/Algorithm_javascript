@@ -1,16 +1,20 @@
-for(i=0; i<4; i++){
-    var a = Math.abs(5-i)
-    blank1 = " ".repeat((a*2-1)/2)
-    star1 = "*".repeat(i*2+1)
-    console.log(blank1 + star1)
+function diamond(num){
+    for(i=0; i<num/2; i++){
+        blank1 = " ".repeat((num/2+1)-i)
+        star1 = "*".repeat(i*2 + 1)
+        console.log(blank1 + star1)
+           
+    }
+    
+    for(i=0; i<num/2+1; i++){
+        var a1 = Math.abs(i);
+        var a2 = Math.abs((num/2+1)-i)
+        blank2 = " ".repeat((a1*2+1)/2)
+        star2 = "*".repeat(a2*2)
+        console.log(blank2 + star2)
+    }
 }
 
-for(i=0; i<5; i++){
-    var a1 = Math.abs(i);
-    var a2 = Math.abs(5-i)
-    star2 = "*".repeat(a2*2-1)
-    blank2 = " ".repeat((a1*2+1)/2)
-    console.log(blank2 + star2)
-}
+diamond(num)
  
 
